@@ -1,13 +1,11 @@
-import Layout from '@/components/Layout/Layout';
 import '@/styles/globals.css';
-import type { AppProps } from 'next/app';
 import { DynamicContextProvider } from '@dynamic-labs/sdk-react-core';
 import Navbar from '@/components/Navbar/Navbar';
 import MainPage from '@/components/MainPage/MainPage';
 import Image from 'next/image';
 import Background from '../assets/images/background.png';
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App() {
   return (
     <DynamicContextProvider
       settings={{
